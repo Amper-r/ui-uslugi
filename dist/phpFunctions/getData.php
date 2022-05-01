@@ -2,10 +2,10 @@
     function getData($connect, $ftp_data){
         $fun = $_GET["task"];
         $ids = $_GET["uslugaId"];
-        $has_electonic_view = $_GET["has_electonic_view"];
+        $has_electronic_view = $_GET["has_electronic_view"];
         try {
             if(isset($fun)){
-                $data = $fun($connect, $ids, $has_electonic_view);
+                $data = $fun($connect, $ids, $has_electronic_view);
                 if(!isset($data)){
                     AddError($connect, "Function not defined in url parameters");
                 }
@@ -19,13 +19,13 @@
 
  
  
-     function getUslugi($connect, $id, $has_electonic_view){
-         if(!isset($has_electonic_view)){
-             $has_electonic_view = 1;
+     function getUslugi($connect, $id, $has_electronic_view){
+         if(!isset($has_electronic_view)){
+             $has_electronic_view = 1;
          }
-         $has_electonic_view_str =  $has_electonic_view < 0 ? "" : "WHERE has_electonic_view=".$has_electonic_view;
+         $has_electronic_view_str =  $has_electronic_view < 0 ? "" : "WHERE has_electronic_view=".$has_electronic_view;
  
-         $query = $connect->query("SELECT * FROM products ".$has_electonic_view_str."");
+         $query = $connect->query("SELECT * FROM products ".$has_electronic_view_str."");
          while($row = $query->fetch_assoc()){
              $data[] = $row;
          }
@@ -36,7 +36,7 @@
          return $data;
      }
  
-     function getUsluga($connect, $ids, $has_electonic_view){
+     function getUsluga($connect, $ids, $has_electronic_view){
          if(!isset($ids)){
              AddError($connect, "Missing uslugaId argument");
          }

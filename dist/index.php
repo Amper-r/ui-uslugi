@@ -27,11 +27,11 @@
                 <?php
                     $data = getData($connect, $ftp_data);
                     foreach (getData($connect, $ftp_data) as $value) {
-                        echo "<li><a class='list-link' href='usluga.php?task=getUsluga&uslugaId=".$value["id"]."&has_electonic_view=".$_GET["has_electonic_view"]."'>".$value["name"]."</a></li>";
+                        echo "<li><a class='list-link' href='usluga.php?task=getUsluga&uslugaId=".$value["id"]."&has_electronic_view=".$_GET["has_electronic_view"]."'>".$value["name"]."</a></li>";
                     }
-                    $has_electonic_view = $_GET["has_electonic_view"] != null ? "<a href='usluga.php?task=getUslugi&has_electonic_view=".$_GET["has_electonic_view"]."' class='btn-more'>Показать все услуги подробно</a>" : "<a href='usluga.php?task=getUslugi' class='btn-more'>Показать все услуги подробно</a>";
+                    $has_electronic_view = $_GET["has_electronic_view"] != null ? "<a href='usluga.php?task=getUslugi&has_electronic_view=".$_GET["has_electronic_view"]."' class='btn-more'>Показать все услуги подробно</a>" : "<a href='usluga.php?task=getUslugi' class='btn-more'>Показать все услуги подробно</a>";
 
-                    echo "<li>".$has_electonic_view."</li>";
+                    echo "<li>".$has_electronic_view."</li>";
                 ?>
             </ul>
         </main>

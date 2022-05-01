@@ -23,8 +23,8 @@
             <?php
                 $data = getData($connect, $ftp_data);
 
-                $has_electonic_view = $_GET["has_electonic_view"];
-                echo ($has_electonic_view != null ? "<a href='index.php?task=getUslugi&has_electonic_view=".$has_electonic_view."' class='back-btn'></a>" : "<a href='index.php?task=getUslugi' class='back-btn'></a>");
+                $has_electronic_view = $_GET["has_electronic_view"];
+                echo ($has_electronic_view != null ? "<a href='index.php?task=getUslugi&has_electronic_view=".$has_electronic_view."' class='back-btn'></a>" : "<a href='index.php?task=getUslugi' class='back-btn'></a>");
 
                 foreach ($data as $item_data) {
                     echo '
@@ -46,7 +46,7 @@
                         </li>
                         <li class="item-prop">
                             <span class="item-prop-key">Имеет электронный вид:</span>
-                            <span class="item-prop-value">'.$item_data["has_electonic_view"].'</span>
+                            <span class="item-prop-value">'.$item_data["has_electronic_view"].'</span>
                         </li>
                     </ul>';
                 }
