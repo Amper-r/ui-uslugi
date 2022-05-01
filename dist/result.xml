@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table border="1" style="border-collapse:collapse; text-transform: capitalize;" DateTime="2022-05-01 08:07:18">
+  <tr>
+    <th>ID:</th>
+    <th>Name:</th>
+    <th>Organization:</th>
+    <th>Payment:</th>
+    <th>State duty payment:</th>
+    <th>Has electonic view:</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>Хостинг</th>
+    <th>REG.RU</th>
+    <th>true</th>
+    <th>true</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>2</th>
+    <th>Домен</th>
+    <th>REG.RU</th>
+    <th>false</th>
+    <th>true</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>3</th>
+    <th>SSL сертификат</th>
+    <th>REG.RU</th>
+    <th>true</th>
+    <th>false</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>4</th>
+    <th>Дизайн</th>
+    <th>Студия Артемия Лебедева</th>
+    <th>false</th>
+    <th>true</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>5</th>
+    <th>VDS</th>
+    <th>REG.RU</th>
+    <th>false</th>
+    <th>false</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>6</th>
+    <th>VPS</th>
+    <th>REG.RU</th>
+    <th>true</th>
+    <th>false</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>7</th>
+    <th>Разработка сайтов</th>
+    <th>DevRU</th>
+    <th>false</th>
+    <th>true</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>8</th>
+    <th>Разработка приложений</th>
+    <th>DevRU</th>
+    <th>true</th>
+    <th>false</th>
+    <th>0</th>
+  </tr>
+  <tr>
+    <th>9</th>
+    <th>Разработка веб-сервисов</th>
+    <th>DevRU</th>
+    <th>true</th>
+    <th>true</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>10</th>
+    <th>SEO оптимизация</th>
+    <th>DevRU</th>
+    <th>false</th>
+    <th>true</th>
+    <th>0</th>
+  </tr>
+</table>
